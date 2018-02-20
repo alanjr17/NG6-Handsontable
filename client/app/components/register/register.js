@@ -6,6 +6,16 @@ const registerModule = angular.module('register', [
   uiRouter,
 ])
 
+  .config(($stateProvider) => {
+    'ngInject';
+
+    $stateProvider
+      .state('register', {
+        url: '/register',
+        component: 'register',
+      });
+  })
+
   .component('register', registerComponent)
 
   .name;

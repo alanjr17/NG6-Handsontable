@@ -6,7 +6,7 @@ const formModule = angular.module('form', [
   uiRouter,
 ])
 
-  .component('form', formComponent)
+  .component('userForm', formComponent)
 
   .name;
 

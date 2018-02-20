@@ -6,6 +6,16 @@ const usersModule = angular.module('users', [
   uiRouter,
 ])
 
+  .config(($stateProvider) => {
+    'ngInject';
+
+    $stateProvider
+      .state('user-list', {
+        url: '/user-list',
+        component: 'users',
+      });
+  })
+
   .component('users', usersComponent)
 
   .name;
