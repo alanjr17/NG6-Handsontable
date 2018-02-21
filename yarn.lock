@@ -4149,6 +4149,10 @@ ng-annotate@1.2.1:
     stringset "~0.2.1"
     tryor "~0.1.2"
 
+ngstorage-webpack@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/ngstorage-webpack/-/ngstorage-webpack-2.2.2.tgz#b83a944c41216c2a4dd49547fc629568faf066ac"
+
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
