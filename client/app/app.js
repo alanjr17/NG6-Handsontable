@@ -3,6 +3,7 @@ import 'bootstrap';
 
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
+import ngMessages from 'angular-messages';
 
 import Common from './common/common';
 import Components from './components/components';
@@ -11,6 +12,7 @@ import AppComponent from './app.component';
 
 angular.module('app', [
   uiRouter,
+  ngMessages,
   Common,
   Components,
   Services

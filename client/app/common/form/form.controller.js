@@ -1,7 +1,9 @@
 class FormController {
+ 
   constructor() {
-    this.name = 'form';
+    this.user = {};
   }
+
 }
 
 export default FormController;

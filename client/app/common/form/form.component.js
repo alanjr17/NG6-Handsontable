@@ -4,7 +4,10 @@ import './form.scss';
 
 const formComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    user: '<',
+    onSubmit: '&'
+  },
   template,
   controller,
 };
