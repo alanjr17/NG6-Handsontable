@@ -1,9 +1,22 @@
-const UsersFactory = function () {
-  const user = {};
+const UsersFactory = function ($localStorage) {
+  "ngInject";
+  
+  this.$localStorage = $localStorage.$default({
+    users: []
+  });
+  this.users = this.$localStorage.users;
 
-  const getUser = () => user;
+  const getUsers = () => users;
 
-  return { getUser };
+  const addUser = (newUser) => {
+    this.users.push(newUser);
+  }
+
+  return { 
+    getUsers,
+    addUser 
+  };
+
 };
 
 export default UsersFactory;

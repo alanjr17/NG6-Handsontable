@@ -1,9 +1,9 @@
 import angular from 'angular';
-import UsersFactory from './users.factory';
+import usersFactory from './users.factory';
 
 const userModule = angular.module('usersFactory', [])
 
-  .factory('Users', UsersFactory)
+  .factory('usersFactory', usersFactory)
 
   .name;
 
