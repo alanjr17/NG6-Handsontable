@@ -11,7 +11,10 @@ const userModule = angular.module('user', [
 
     $stateProvider
       .state('user', {
-        url: '/user',
+        url: '/user/:id',
+        params: {
+          id: null
+        },
         component: 'user',
       });
   })

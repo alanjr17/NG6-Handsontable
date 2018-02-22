@@ -1,4 +1,4 @@
 <div>
-  <h1>{{ $ctrl.name }}</h1>
+  <h2>Editing user...</h2>
 </div>
-<user-form></user-form>
+<user-form user="$ctrl.user" on-submit="$ctrl.updateUser()"></user-form>
