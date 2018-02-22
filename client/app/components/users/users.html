@@ -3,7 +3,9 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <p ng-repeat="user in $ctrl.users" ng-click="$ctrl.selectUser(user)">{{user.name}}</p>
+    <div id="hot-table"></div>
+  </div>
+  <div class="col-md-12">
     <button type="submit" class="btn btn-primary" 
       ng-click="$ctrl.editUser()" ng-disabled="!$ctrl.selectedUser.name">
       Edit {{$ctrl.selectedUser.name}}

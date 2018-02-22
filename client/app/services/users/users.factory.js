@@ -7,7 +7,7 @@ const UsersFactory = function ($localStorage, $filter) {
   });
   this.users = this.$localStorage.users;
 
-  const getUsers = () => this.users;
+  const getUsers = () => angular.copy(this.users);
 
   const addUser = (newUser) => {
     this.users.push(newUser);
