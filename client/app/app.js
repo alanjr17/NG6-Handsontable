@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
+import 'handsontable.css';
 
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';

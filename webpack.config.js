@@ -18,6 +18,11 @@ module.exports = {
       { test: /\.css$/, loader: 'style-loader!css-loader' },
     ],
   },
+  resolve: {
+    alias: {
+      'handsontable.css': path.resolve(__dirname, 'node_modules/handsontable-pro/dist/handsontable.css')
+    }
+  },
   plugins: [
     // Injects bundles in your index.html instead of wiring all manually.
     // It also adds hash to all injected assets so we don't have problems
