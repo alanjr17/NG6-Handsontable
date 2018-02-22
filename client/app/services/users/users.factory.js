@@ -6,7 +6,7 @@ const UsersFactory = function ($localStorage) {
   });
   this.users = this.$localStorage.users;
 
-  const getUsers = () => users;
+  const getUsers = () => this.users;
 
   const addUser = (newUser) => {
     this.users.push(newUser);

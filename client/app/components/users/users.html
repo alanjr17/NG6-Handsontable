@@ -1,3 +1,12 @@
 <div>
-  <h1>{{ $ctrl.name }}</h1>
+  <h1>Stored Users</h1>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p ng-repeat="user in $ctrl.users" ng-click="$ctrl.selectUser(user)">{{user.name}}</p>
+    <button type="submit" class="btn btn-primary" 
+      ng-click="$ctrl.editUser()" ng-disabled="!$ctrl.selectedUser.name">
+      Edit {{$ctrl.selectedUser.name}}
+    </button>
+  </div>
 </div>
